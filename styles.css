@@ -1,0 +1,189 @@
+:root {
+    --quorange: #FF3E01;
+    --qumagenta: #E41B52;
+    --qured: #D90A35;
+    --qublack: #454545;
+}
+
+*{
+    font-family: "Roboto";
+}
+
+h1 {
+    color: var(--quorange);
+}
+
+.container {
+    display: flexbox;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right bottom, var(--qumagenta), var(--qured), var(--quorange)) !important;
+    font-size: 1rem;
+    margin: -10px;
+    justify-content: space-between;
+}
+
+.navicon {
+    margin-right: auto;
+}
+
+.navicon h1{
+    color: #ffffff;
+    font-size: 2rem;
+    padding-left: 2rem;
+    font-weight: 500;
+}
+
+.navmenu {
+    color: #ffffff;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    float: right;
+}
+
+.navmenu h2 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+#welcome-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#welcome-page h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#welcome-page h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #454545;
+    margin-top: .5rem;
+}
+
+#theproblem {
+    max-width: 1440px;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+#theproblem p {
+    margin-top: 0rem;
+    font-size: 28px;
+    color: #454545;
+}
+
+.statsbox {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.stat {
+    max-width: 384px;
+    align-items: center;
+}
+
+.stat h1{
+    color: #FF3E01;
+    font-size: 81px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.stat p {
+    color: #454545;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px)  {
+    .statsbox {
+        justify-content: center;
+    }
+}
+#ourwork {
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    max-width: 1440px;
+}
+
+#ourwork p {
+    color: #454545;
+    font-size: 28px;
+}
+
+.workbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center
+}
+
+.work {
+    margin: 1rem;
+    max-width: 500px;
+    min-width: 400px;
+    height: 313px;
+    color: #ffffff;
+    background-image: url("qubox.png");
+    background-size: 100%;
+    border-radius: 25px;
+}
+
+.work h2 {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.work p {
+    font-weight: 400;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
