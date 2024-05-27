@@ -101,7 +101,6 @@ nav li {
 
 #welcome-page {
     padding-top: 2rem;
-    padding-bottom: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: center;
@@ -126,22 +125,6 @@ nav li {
     text-align: start;
 }
 
-#theproblem h2 {
-    justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.5rem;
-    max-width: 1440px;
-}
-
-#theproblem p {
-    margin-top: 0rem;
-    font-size: 1.5rem;
-    color: #454545;
-}
-
 @media only screen and (max-width: 800px)  {
     #welcomepage {
         justify-content: center;
@@ -161,6 +144,8 @@ nav li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 0rem;
+    margin-top: 0rem;
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
