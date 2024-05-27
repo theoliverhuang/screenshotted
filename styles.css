@@ -37,68 +37,122 @@ nav {
     justify-content: space-between;
 }
 
-.navicon {
-    margin-right: auto;
+nav li {
+    list-style-type: none;
+    display: inline-block;
 }
 
-.navicon h2{
+.navleft {
+    float: left;
+}
+
+.navleft h2{
     color: #ffffff;
     font-size: 2rem;
     padding-left: 2rem;
     font-weight: 500;
 }
 
-.navmenu {
+.navright {
     color: #ffffff;
-    font-weight: 400;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 8px;
     margin-left: auto;
-    float: right;
+    font-size: .9rem;
+    margin-right: 1.5rem;
+    justify-content: flex-end;
+    text-align: end;
+
 }
 
-.navmenu h2 {
-    font-weight: 300;
+.navright h3 {
+    margin-left: 1rem;
+    font-weight: 400;
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+    .navleft {
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+    }
+    .navright {
+        justify-content: center;
+        margin-top: -2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 #welcome-page {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+    text-align: left;
+    max-width: 800px;
 }
 
 #welcome-page h1 {
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 400;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    color: var(--quorange);
+    text-align: start;
 }
 
 #welcome-page h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 300;
     color: #454545;
     margin-top: .5rem;
+    text-align: start;
 }
 
-#theproblem {
-    max-width: 1440px;
+#theproblem h2 {
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
+    font-size: 1.5rem;
+    max-width: 1440px;
 }
 
 #theproblem p {
     margin-top: 0rem;
     font-size: 1.5rem;
     color: #454545;
+}
+
+@media only screen and (max-width: 800px)  {
+    #welcomepage {
+        justify-content: center;
+        text-align: center;
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    #welcomepage h2 {
+        font-size: 2rem;
+    }
 }
 
 .statsbox {
@@ -161,10 +215,10 @@ nav {
 }
 @media only screen and (max-width: 800px){
     #theproblem p {
-        font-size: medium;
+        font-size: large;
     }
     #ourwork p {
-        font-size: medium;
+        font-size: large;
     }
     
 }
