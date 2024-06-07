@@ -216,18 +216,28 @@ nav li {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    justify-content: center
+    justify-content: space-between
 }
 
+@media only screen and (max-width: 1150px){
+    .workbox {
+        justify-content: center;
+    }
+    
+}
 .work {
     margin: 1rem;
     max-width: 500px;
-    min-width: 400px;
-    height: 313px;
+    min-width: 300px;
+    min-height: 280px;
+    max-height: 380px;
     color: #ffffff;
     background-image: url("qubox.png");
     background-size: 100%;
     border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
 }
 
 .work h3 {
