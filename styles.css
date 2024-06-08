@@ -27,20 +27,21 @@ h2 {
     text-align: center;
 }
 
-nav {
+.navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: linear-gradient(to right bottom, var(--qumagenta), var(--qured), var(--quorange)) !important;
     font-size: 1rem;
-    margin: -10px;
+    margin-left: -10px;
+    margin-right: -20px;
+    margin-top: -10px;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
-nav li {
-    list-style-type: none;
-    display: inline-block;
-}
+
 
 .navleft {
     float: left;
@@ -53,18 +54,13 @@ nav li {
     font-weight: 500;
 }
 
-.navright {
-    color: #ffffff;
-    display: flex;
+.navright{
+    display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    margin-left: auto;
     font-size: .9rem;
+    margin-top: 1.5rem;
     margin-right: 1.5rem;
-    justify-content: flex-end;
-    text-align: end;
-
+    color: #ffffff;
 }
 
 .navright h3 {
@@ -73,26 +69,59 @@ nav li {
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-    nav {
-        justify-content: center;
-    }
-    .navleft {
-        justify-content: center;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
+.navright li {
+    list-style-type: none;
+    display: inline-block;
+    flex-direction: row;    
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3.6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px){
+    .hamburger {
+        display: block;
+        margin-top: 1.8rem;
+        margin-right: 2rem;
     }
     .navright {
-        justify-content: center;
-        margin-top: -2rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0px;
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right top, var(--qumagenta), var(--qured), var(--quorange)) !important;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
 
+    .navright.active {
+        left: 0;
+    }
+
+    .navmenu {
+        text-align: center;
+    }
+    .navright h3{
+        font-size: 20px;
     }
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -100,7 +129,7 @@ nav li {
 }
 
 #welcome-page {
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: center;
