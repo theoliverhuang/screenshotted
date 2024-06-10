@@ -6,7 +6,7 @@
 }
 
 *{
-    font-family: "Roboto";
+    font-family: "Helvetica", "Roboto";
 }
 
 a, a:hover, a:visited, a:active {
@@ -108,6 +108,7 @@ h2 {
         padding-left: 0px;
         padding-right: 0px;
         text-align: center;
+
     }
 
     .navright.active {
@@ -147,23 +148,26 @@ h2 {
 }
 
 #welcome-page h2 {
-    font-size: 4rem;
+    font-size: 72px;
     font-weight: 300;
     color: #454545;
     margin-top: .5rem;
     text-align: start;
 }
 
-@media only screen and (max-width: 800px)  {
-    #welcomepage {
-        justify-content: center;
+@media only screen and (max-width: 800px){
+    #welcome-page h2 {
+        font-size: 64px;
+    }    
+}
+@media only screen and (max-width: 600px) {
+    #welcome-page {
         text-align: center;
-        margin: 2rem;
-        padding: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
-
-    #welcomepage h2 {
-        font-size: 2rem;
+    #welcome-page h2 {
+        font-size: 48px;
     }
 }
 
