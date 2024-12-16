@@ -1,327 +1,139 @@
 :root {
-    --quorange: #FF3E01;
-    --qumagenta: #E41B52;
-    --qured: #D90A35;
-    --qublack: #454545;
+    --qudarkblue: #233C6D;
+    --qulightblue: #5F7296;
+    --quwhite: #EFEFEF;
+    --qunavy: #2B2F37;
 }
 
-*{
-    font-family: "Roboto", "Helvetica";
+* {
+    margin: 0;
+    padding: 0;
 }
-
-a, a:hover, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-   }
 
 h1 {
-    color: var(--quorange);
+    font-family: Times, 'Times New Roman';
+    color: var(--quwhite);
+    font-weight: 400;
+    font-size: 64px;
 }
 
 h2 {
-    color: var(--quorange);
+    font-weight: 400;
+    color: var(--qunavy);
+    font-size: 64px;
+}
+
+h3 {
+    font-weight: 400;
+    color: var(--quwhite);
+    font-size: 36px;
+}
+
+p {
+    font-weight: 400;
+    color: var(--quwhite);
+    font-size: 20px;
+}
+
+.herocontainer {
+    min-height: 100vh;
+    background-color: var(--qudarkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herotext {
+    max-width: 600px;
+    justify-content: start;
+}
+
+.herotext h2 {
+    color: var(--quwhite);
+    font-size: 36px;
 }
 
 .container {
-    display: flexbox;
-    text-align: center;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to right bottom, var(--qumagenta), var(--qured), var(--quorange)) !important;
-    font-size: 1rem;
-    margin-left: -10px;
-    margin-right: -20px;
-    margin-top: -10px;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-}
-
-
-
-.navleft {
-    float: left;
-}
-
-.navleft h2{
-    color: #ffffff;
-    font-size: 2rem;
-    padding-left: 2rem;
-    font-weight: 500;
-}
-
-.navright{
-    display: inline-flex;
-    flex-direction: row;
-    font-size: .9rem;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    color: #ffffff;
-}
-
-.navright h3 {
-    margin-left: 1rem;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.navright li {
-    list-style-type: none;
-    display: inline-block;
-    flex-direction: row;    
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 30px;
-    height: 3.6px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    background-color: #ffffff;
-}
-
-@media screen and (max-width: 700px){
-    .hamburger {
-        display: block;
-        margin-top: 1.8rem;
-        margin-right: 2rem;
-    }
-    .navright {
-        position: fixed;
-        left: -100%;
-        top: 60px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        background-image: linear-gradient(to right top, var(--qumagenta), var(--qured), var(--quorange)) !important;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        text-align: center;
-
-    }
-
-    .navright.active {
-        left: 0;
-    }
-
-    .navmenu {
-        text-align: center;
-    }
-    .navright h3{
-        font-size: 20px;
-    }
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#welcome-page {
-    padding-top: 6rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    min-height: 100vh;
+    background-color: var(--quwhite);
     justify-content: center;
-    text-align: left;
-    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
 }
 
-#welcome-page h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    color: var(--quorange);
-    text-align: start;
+.header {
+    padding: 50px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(300px, 80%, 1100px);
 }
 
-#welcome-page h2 {
-    font-size: 72px;
-    font-weight: 300;
-    color: #454545;
-    margin-top: .5rem;
-    text-align: start;
+.workbox {
+    display: inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    width: clamp(300px, 80%, 1100px);
 }
 
-@media only screen and (max-width: 800px){
-    #welcome-page h2 {
-        font-size: 64px;
-    }    
+.work {
+    min-height: 420px;
+    max-width: 300px;
+    background-color: var(--qulightblue);
+    display: inline-flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    margin: 20px;
+
 }
-@media only screen and (max-width: 600px) {
-    #welcome-page {
-        text-align: center;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+
+.work img {
+    object-fit: cover;
+    max-width: 300px;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.worktext {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .herocontainer {
+        padding-left: 40px;
+        padding-right: 40px;
     }
-    #welcome-page h2 {
+
+    h1 {
         font-size: 48px;
     }
-}
 
-.statsbox {
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 0rem;
-    margin-top: 0rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    align-items: center;
-    max-width: 1440px;
-    margin: auto;
-    padding-bottom: 3rem;
-}
-
-.stat {
-    max-width: 384px;
-    align-items: center;
-}
-
-.stat h3{
-    color: #FF3E01;
-    font-size: 81px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-.stat p {
-    color: #454545;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 0rem;
-    padding-top: 0rem;
-    text-align: center;
-}
-
-@media only screen and (max-width: 1300px)  {
-    .statsbox {
-        justify-content: center;
+    h2 {
+        font-size: 40px;
     }
-}
 
-
-#ourwork {
-    justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.5rem;
-    max-width: 1440px;
-}
-
-#ourwork p {
-    color: #454545;
-    font-size: 1.5rem;
-}
-@media only screen and (max-width: 800px){
-    #theproblem p {
-        font-size: large;
-    }
-    #ourwork p {
-        font-size: large;
-    }
-    
-}
-.workbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    justify-content: space-between
-}
-
-@media only screen and (max-width: 1150px){
     .workbox {
-        justify-content: center;
+        padding-top: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
     }
-    
-}
-.work {
-    margin: 1rem;
-    max-width: 500px;
-    min-width: 300px;
-    min-height: 280px;
-    max-height: 380px;
-    color: #ffffff;
-    background-image: url("qubox.png");
-    background-size: 100%;
-    border-radius: 25px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 10px;
-}
 
-.work h3 {
-    font-weight: bold;
-    font-size: 32px;
-    text-align: center;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .work {
+        max-width: 280px;
+    }
 
-.work p {
-    font-weight: 400;
-    font-size: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .work img {
+        max-width: 280px;
+    }
 
-.footer {
-    background-image: url("qufooter.png");
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    margin-bottom: -2rem;
-    padding-bottom: 1rem;
-    background-size: cover;
-}
-
-.footericon {
-    color: #ffffff;
-    padding-left: 2rem;
-}
-
-.footericon h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    padding-bottom: 0rem;
-    margin-bottom: .5rem;
-}
-
-.footericon h3 {
-    color: #ffffff;
-    font-weight: 400;
-    margin-top: 0rem;
-    padding-top: 0rem;
-}
-
-.footersocial {
-    margin-top: 1rem;
-    padding-top: 1rem;
 }
