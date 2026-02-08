@@ -169,7 +169,29 @@ p {
     object-fit: cover;
 }
 
+.body {
+    width: clamp(300px, 80%, 1100px);
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.body p {
+    color: var(--edblack);
+    font-size: 24px;
+}
+
+.body ul {
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 800px;
+}
+
+.body li {
+    color: var(--edblack);
+    font-size: 18px;
+    font-family: 'instrument sans', sans-serif;
+}
 
 @media screen and (max-width: 700px) {
     .herocontainer {
