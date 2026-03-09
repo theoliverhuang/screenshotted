@@ -193,11 +193,51 @@ p {
     font-family: 'instrument sans', sans-serif;
 }
 
+.fellows {
+    padding: 20px;
+    width: clamp(300px, 80%, 1000px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fellows h2 {
+    margin-bottom: 30px;
+}
+
+.fellowship-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.fellows h3 {
+    color: var(--edblack);
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+}
+
+.fellows h4 {
+    color: #460753;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
 @media screen and (max-width: 700px) {
     .herocontainer {
         padding-left: 20px;
         padding-right: 20px;
         width: auto;
+        min-height: 100vh;
     }
 
     h1 {
@@ -236,5 +276,10 @@ p {
 
     .about-text {
         margin-top: 20px;
+    }
+
+    .fellowship-container {
+        flex-direction: none;
+        justify-content: space-evenly;
     }
 }
