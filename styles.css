@@ -94,8 +94,10 @@ p {
     background-color: var(--edpurple);
     border: none;
     border-radius: 20px;
-    padding: 12px;
-    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
