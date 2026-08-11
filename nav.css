@@ -1,6 +1,7 @@
 :root {
     --edwhite: #F0EEEF;
     --edpurple: #460753;
+    --edpurplish: #961baf;
     --edblack: #18021C;
 }
 
@@ -22,6 +23,7 @@ img {
 }
 
 .navcontainer {
+    background-color: var(--edwhite);
     width: 100%;
     position: fixed;
 }
